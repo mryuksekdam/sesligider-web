@@ -1,0 +1,268 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Destek - Sesli Gider</title>
+  <meta name="description" content="Sesli Gider kullanÄ±mÄ±, mikrofon izni, bildirimler ve veri silme hakkÄ±nda sÄ±k sorulan sorular." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="header-blur sticky top-0 z-50">
+    <nav class="container-shell flex h-16 items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2 font-extrabold text-[var(--color-primary-dark)]" aria-label="Sesli Gider ana sayfa">
+        <span class="grid h-9 w-9 place-items-center rounded-full bg-[var(--color-primary-light)]">
+          <i data-lucide="mic" class="h-5 w-5 text-[var(--color-primary)]"></i>
+        </span>
+        <span>Sesli Gider</span>
+      </a>
+
+      <div class="hidden items-center gap-8 text-sm font-semibold text-[var(--color-text-muted)] md:flex">
+        <a href="index.html#ozellikler" class="hover:text-[var(--color-primary)]">Ã–zellikler</a>
+        <a href="gizlilik-politikasi.html" class="hover:text-[var(--color-primary)]">Gizlilik</a>
+        <a href="destek.html" class="text-[var(--color-primary)]">Destek</a>
+      </div>
+
+      <button class="btn-primary hidden items-center gap-2 rounded-full px-5 py-2.5 text-sm font-bold md:flex" type="button">
+        <i data-lucide="bell" class="h-4 w-4"></i>
+        YakÄ±nda
+        <i data-lucide="arrow-right" class="h-4 w-4"></i>
+      </button>
+
+      <button id="menuToggle" class="grid h-10 w-10 place-items-center rounded-full border border-[var(--color-border)] bg-[var(--color-card)] text-[var(--color-text)] md:hidden" type="button" aria-label="MenÃ¼yÃ¼ aÃ§" aria-expanded="false">
+        <i data-lucide="menu" class="h-5 w-5"></i>
+      </button>
+    </nav>
+
+    <div id="mobileMenu" class="container-shell hidden pb-4 md:hidden">
+      <div class="flex flex-col gap-2 rounded-2xl border border-[var(--color-border)] bg-[var(--color-card)] p-3 text-sm font-semibold shadow-lg">
+        <a href="index.html#ozellikler" class="rounded-xl px-3 py-2 text-[var(--color-text-muted)] hover:bg-[var(--color-primary-light)] hover:text-[var(--color-primary-dark)]">Ã–zellikler</a>
+        <a href="gizlilik-politikasi.html" class="rounded-xl px-3 py-2 text-[var(--color-text-muted)] hover:bg-[var(--color-primary-light)] hover:text-[var(--color-primary-dark)]">Gizlilik</a>
+        <a href="destek.html" class="rounded-xl bg-[var(--color-primary-light)] px-3 py-2 text-[var(--color-primary-dark)]">Destek</a>
+        <button class="btn-primary mt-1 flex items-center justify-center gap-2 rounded-full px-4 py-2.5 font-bold" type="button">
+          <i data-lucide="bell" class="h-4 w-4"></i>
+          YakÄ±nda
+          <i data-lucide="arrow-right" class="h-4 w-4"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero py-16 md:py-20">
+      <div class="container-shell">
+        <div class="fade-up max-w-3xl">
+          <a href="index.html" class="mb-6 inline-flex items-center gap-2 text-sm font-bold text-[var(--color-primary-dark)] hover:text-[var(--color-primary)]">
+            <i data-lucide="arrow-left" class="h-4 w-4"></i>
+            Ana sayfaya dÃ¶n
+          </a>
+          <p class="inline-flex items-center gap-2 rounded-full border border-[var(--color-border)] bg-white/80 px-4 py-2 text-sm font-bold text-[var(--color-primary-dark)]">
+            <i data-lucide="circle-help" class="h-4 w-4"></i>
+            Destek ve sÄ±k sorulan sorular
+          </p>
+          <h1 class="mt-6 text-4xl font-extrabold leading-tight sm:text-5xl">Destek</h1>
+          <p class="mt-5 text-lg leading-8 text-[var(--color-text-muted)]">
+            Sesli Gider kullanÄ±mÄ±, mikrofon izni, bildirimler, internet baÄŸlantÄ±sÄ± ve veri silme hakkÄ±nda en sÄ±k sorulan sorularÄ± burada bulabilirsin.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-[var(--space-section)]">
+      <div class="container-shell">
+        <div class="max-w-3xl">
+          <p class="font-bold text-[var(--color-primary)]">HÄ±zlÄ± YardÄ±m</p>
+          <h2 class="mt-3 text-3xl font-extrabold leading-tight sm:text-4xl">Ä°htiyacÄ±n olan konuya hÄ±zlÄ±ca geÃ§.</h2>
+        </div>
+
+        <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <a href="#sesli-gider" class="support-card p-6">
+            <i data-lucide="mic" class="h-9 w-9 text-[var(--color-primary)]"></i>
+            <h3 class="mt-5 text-lg font-extrabold">Sesli kayÄ±t ekleme</h3>
+            <p class="mt-3 leading-7 text-[var(--color-text-muted)]">Gelir ve giderleri konuÅŸarak kaydetme adÄ±mlarÄ±nÄ± incele.</p>
+          </a>
+          <a href="#mikrofon-izni" class="support-card p-6">
+            <i data-lucide="lock-keyhole" class="h-9 w-9 text-[var(--color-accent)]"></i>
+            <h3 class="mt-5 text-lg font-extrabold">Mikrofon izni</h3>
+            <p class="mt-3 leading-7 text-[var(--color-text-muted)]">Mikrofonun ne zaman kullanÄ±ldÄ±ÄŸÄ±nÄ± Ã¶ÄŸren.</p>
+          </a>
+          <a href="#bildirimleri-kapatma" class="support-card p-6">
+            <i data-lucide="bell" class="h-9 w-9 text-[var(--color-highlight)]"></i>
+            <h3 class="mt-5 text-lg font-extrabold">Bildirimler</h3>
+            <p class="mt-3 leading-7 text-[var(--color-text-muted)]">HatÄ±rlatma ve bilgilendirme izinlerini yÃ¶net.</p>
+          </a>
+          <a href="#veri-silme" class="support-card p-6">
+            <i data-lucide="trash-2" class="h-9 w-9 text-[var(--color-accent-alt)]"></i>
+            <h3 class="mt-5 text-lg font-extrabold">Verileri silme</h3>
+            <p class="mt-3 leading-7 text-[var(--color-text-muted)]">Yerel kayÄ±tlarÄ± nasÄ±l temizleyebileceÄŸini gÃ¶r.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white py-[var(--space-section)]">
+      <div class="container-shell max-w-4xl">
+        <div class="text-center">
+          <p class="font-bold text-[var(--color-primary)]">SSS</p>
+          <h2 class="mt-3 text-3xl font-extrabold leading-tight sm:text-4xl">SÄ±k Sorulan Sorular</h2>
+        </div>
+
+        <div class="mt-10 space-y-4">
+          <article id="sesli-gider" class="faq-item">
+            <button class="faq-question flex w-full items-center justify-between gap-4 p-5 text-left font-extrabold" type="button">
+              Sesli gider nasÄ±l eklenir?
+              <i data-lucide="chevron-down" class="faq-icon h-5 w-5 shrink-0 text-[var(--color-primary)] transition-transform"></i>
+            </button>
+            <div class="faq-answer px-5">
+              <p class="pb-5 leading-7 text-[var(--color-text-muted)]">Uygulama iÃ§indeki mikrofon butonuna dokunup giderini doÄŸal bir cÃ¼mleyle sÃ¶yleyebilirsin. Ã–rneÄŸin: "BugÃ¼n markete 450 TL harcadÄ±m." OluÅŸan kaydÄ± kontrol edip gerekirse dÃ¼zenleyebilirsin.</p>
+            </div>
+          </article>
+
+          <article id="sesli-gelir" class="faq-item">
+            <button class="faq-question flex w-full items-center justify-between gap-4 p-5 text-left font-extrabold" type="button">
+              Sesli gelir nasÄ±l eklenir?
+              <i data-lucide="chevron-down" class="faq-icon h-5 w-5 shrink-0 text-[var(--color-primary)] transition-transform"></i>
+            </button>
+            <div class="faq-answer px-5">
+              <p class="pb-5 leading-7 text-[var(--color-text-muted)]">Mikrofonu baÅŸlatÄ±p gelirini sÃ¶yleyebilirsin. Ã–rneÄŸin: "MaaÅŸ olarak 35 bin TL aldÄ±m." Sesli Gider kaydÄ± hazÄ±rlar; son kontrol her zaman sende kalÄ±r.</p>
+            </div>
+          </article>
+
+          <article id="mikrofon-izni" class="faq-item">
+            <button class="faq-question flex w-full items-center justify-between gap-4 p-5 text-left font-extrabold" type="button">
+              Mikrofon izni vermeden kullanabilir miyim?
+              <i data-lucide="chevron-down" class="faq-icon h-5 w-5 shrink-0 text-[var(--color-primary)] transition-transform"></i>
+            </button>
+            <div class="faq-answer px-5">
+              <p class="pb-5 leading-7 text-[var(--color-text-muted)]">Evet. Mikrofon izni olmadan sesli giriÅŸ kullanÄ±lamaz, ancak kayÄ±tlarÄ±nÄ± manuel olarak ekleyebilir, dÃ¼zenleyebilir veya silebilirsin.</p>
+            </div>
+          </article>
+
+          <article id="konum-takibi" class="faq-item">
+            <button class="faq-question flex w-full items-center justify-between gap-4 p-5 text-left font-extrabold" type="button">
+              Uygulama konumumu takip ediyor mu?
+              <i data-lucide="chevron-down" class="faq-icon h-5 w-5 shrink-0 text-[var(--color-primary)] transition-transform"></i>
+            </button>
+            <div class="faq-answer px-5">
+              <p class="pb-5 leading-7 text-[var(--color-text-muted)]">HayÄ±r. Sesli Gider konum izni istemez, konum verisi toplamaz ve konum takibi yapmaz.</p>
+            </div>
+          </article>
+
+          <article id="finansal-veriler" class="faq-item">
+            <button class="faq-question flex w-full items-center justify-between gap-4 p-5 text-left font-extrabold" type="button">
+              Finansal verilerim internete gÃ¶nderiliyor mu?
+              <i data-lucide="chevron-down" class="faq-icon h-5 w-5 shrink-0 text-[var(--color-primary)] transition-transform"></i>
+            </button>
+            <div class="faq-answer px-5">
+              <p class="pb-5 leading-7 text-[var(--color-text-muted)]">HayÄ±r. Gelir ve gider kayÄ±tlarÄ±n telefonunda tutulur. Finansal kayÄ±tlarÄ±n sunucularÄ±mÄ±za gÃ¶nderilmez.</p>
+            </div>
+          </article>
+
+          <article id="internet" class="faq-item">
+            <button class="faq-question flex w-full items-center justify-between gap-4 p-5 text-left font-extrabold" type="button">
+              Ä°nternet baÄŸlantÄ±sÄ± neden kullanÄ±lÄ±yor?
+              <i data-lucide="chevron-down" class="faq-icon h-5 w-5 shrink-0 text-[var(--color-primary)] transition-transform"></i>
+            </button>
+            <div class="faq-answer px-5">
+              <p class="pb-5 leading-7 text-[var(--color-text-muted)]">Kategori listeleri, uygulama iÃ§i bilgilendirmeler ve push bildirimleri gibi destekleyici Ã¶zellikler iÃ§in internet baÄŸlantÄ±sÄ± kullanÄ±labilir. Bu kullanÄ±m finansal kayÄ±tlarÄ±nÄ±n sunucularÄ±mÄ±za gÃ¶nderildiÄŸi anlamÄ±na gelmez.</p>
+            </div>
+          </article>
+
+          <article id="bildirimleri-kapatma" class="faq-item">
+            <button class="faq-question flex w-full items-center justify-between gap-4 p-5 text-left font-extrabold" type="button">
+              Bildirimleri nasÄ±l kapatÄ±rÄ±m?
+              <i data-lucide="chevron-down" class="faq-icon h-5 w-5 shrink-0 text-[var(--color-primary)] transition-transform"></i>
+            </button>
+            <div class="faq-answer px-5">
+              <p class="pb-5 leading-7 text-[var(--color-text-muted)]">Bildirimleri cihaz ayarlarÄ±ndan istediÄŸin zaman kapatabilirsin. Bildirim izni kapalÄ±yken de temel kayÄ±t yÃ¶netimi Ã¶zelliklerini kullanmaya devam edebilirsin.</p>
+            </div>
+          </article>
+
+          <article id="veri-silme" class="faq-item">
+            <button class="faq-question flex w-full items-center justify-between gap-4 p-5 text-left font-extrabold" type="button">
+              Verilerimi nasÄ±l silebilirim?
+              <i data-lucide="chevron-down" class="faq-icon h-5 w-5 shrink-0 text-[var(--color-primary)] transition-transform"></i>
+            </button>
+            <div class="faq-answer px-5">
+              <p class="pb-5 leading-7 text-[var(--color-text-muted)]">KayÄ±tlarÄ±nÄ± uygulama iÃ§inden silebilir veya uygulamayÄ± cihazÄ±ndan kaldÄ±rarak yerel verileri temizleyebilirsin. Detaylar iÃ§in <a href="veri-silme.html" class="font-bold text-[var(--color-primary)] underline">Veri Silme</a> sayfasÄ±nÄ± inceleyebilirsin.</p>
+            </div>
+          </article>
+
+          <article id="finansal-tavsiye" class="faq-item">
+            <button class="faq-question flex w-full items-center justify-between gap-4 p-5 text-left font-extrabold" type="button">
+              Uygulama finansal tavsiye veriyor mu?
+              <i data-lucide="chevron-down" class="faq-icon h-5 w-5 shrink-0 text-[var(--color-primary)] transition-transform"></i>
+            </button>
+            <div class="faq-answer px-5">
+              <p class="pb-5 leading-7 text-[var(--color-text-muted)]">HayÄ±r. Sesli Gider kiÅŸisel gelir/gider takibi iÃ§in geliÅŸtirilmiÅŸtir. KayÄ±tlar, kategoriler ve Ã¶zetler yalnÄ±zca kendi takibini kolaylaÅŸtÄ±rmak iÃ§indir.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-[var(--space-section)]">
+      <div class="container-shell">
+        <div class="contact-card overflow-hidden">
+          <div class="grid gap-0 lg:grid-cols-[1fr_auto]">
+            <div class="p-6 sm:p-8 lg:p-10">
+              <div class="inline-flex h-12 w-12 items-center justify-center rounded-full bg-[var(--color-primary-light)] text-[var(--color-primary-dark)]">
+                <i data-lucide="mail" class="h-6 w-6"></i>
+              </div>
+              <h2 class="mt-6 text-3xl font-extrabold leading-tight">Sorunun devam mÄ± ediyor?</h2>
+              <p class="mt-4 max-w-2xl leading-8 text-[var(--color-text-muted)]">
+                Gizlilik, veri silme, mikrofon izni veya uygulama kullanÄ±mÄ±yla ilgili sorular iÃ§in destek ekibine yazabilirsin.
+              </p>
+              <a href="mailto:destek@sesligider.com" class="mt-6 inline-flex items-center gap-2 rounded-full bg-[var(--color-primary)] px-6 py-3 font-extrabold text-white hover:bg-[var(--color-primary-dark)]">
+                <i data-lucide="send" class="h-5 w-5"></i>
+                destek@sesligider.com
+              </a>
+            </div>
+            <div class="notice-band flex min-h-64 items-center p-6 text-white sm:p-8 lg:w-80">
+              <div>
+                <i data-lucide="shield-check" class="h-10 w-10 text-[var(--color-primary-light)]"></i>
+                <p class="mt-5 text-lg font-extrabold leading-8">Finansal kayÄ±tlarÄ±n telefonunda tutulur.</p>
+                <p class="mt-3 leading-7 text-[var(--color-footer-muted)]">Sesli Gider konum verisi toplamaz ve mikrofonu yalnÄ±zca sen baÅŸlattÄ±ÄŸÄ±nda kullanÄ±r.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-[var(--color-border)] bg-[var(--color-text)] py-12 text-white">
+    <div class="container-shell">
+      <div class="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-start">
+        <div>
+          <a href="index.html" class="inline-flex items-center gap-2 font-extrabold">
+            <span class="grid h-9 w-9 place-items-center rounded-full bg-[var(--color-primary)]">
+              <i data-lucide="mic" class="h-5 w-5"></i>
+            </span>
+            Sesli Gider
+          </a>
+          <p class="mt-4 max-w-md leading-7 text-[var(--color-footer-muted)]">Gelir ve giderlerini konuÅŸarak kaydet.</p>
+          <p class="mt-2 max-w-md leading-7 text-[var(--color-footer-muted)]">Finansal kayÄ±tlarÄ±nÄ±z telefonunuzda tutulur.</p>
+        </div>
+        <div class="flex flex-wrap gap-x-6 gap-y-3 text-sm font-semibold text-[var(--color-footer-muted)] lg:justify-end">
+          <a href="index.html#ozellikler" class="hover:text-white">Ã–zellikler</a>
+          <a href="gizlilik-politikasi.html" class="hover:text-white">Gizlilik PolitikasÄ±</a>
+          <a href="kullanim-sartlari.html" class="hover:text-white">KullanÄ±m ÅartlarÄ±</a>
+          <a href="destek.html" class="text-white">Destek</a>
+          <a href="veri-silme.html" class="hover:text-white">Veri Silme</a>
+          <a href="iletisim.html" class="hover:text-white">Ä°letiÅŸim</a>
+        </div>
+      </div>
+      <div class="mt-10 border-t border-white/10 pt-6 text-sm text-[var(--color-footer-subtle)]">
+        Â© 2026 Sesli Gider. TÃ¼m haklarÄ± saklÄ±dÄ±r.
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

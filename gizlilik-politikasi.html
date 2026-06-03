@@ -1,158 +1,16 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="tr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gizlilik Politikası - Sesli Gider</title>
-  <meta name="description" content="Sesli Gider'in veri kullanımı, mikrofon izni, bildirimler ve yerel veri saklama yaklaşımı hakkında bilgi alın." />
+  <title>Gizlilik PolitikasÄ± - Sesli Gider</title>
+  <meta name="description" content="Sesli Gider'in veri kullanÄ±mÄ±, mikrofon izni, bildirimler ve yerel veri saklama yaklaÅŸÄ±mÄ± hakkÄ±nda bilgi alÄ±n." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
-  <style>
-    :root {
-      --color-primary: #16A34A;
-      --color-primary-dark: #14532D;
-      --color-primary-light: #DCFCE7;
-      --color-accent: #2563EB;
-      --color-accent-alt: #6366F1;
-      --color-highlight: #F59E0B;
-      --color-text: #0F172A;
-      --color-text-muted: #475569;
-      --color-bg: #F8FAFC;
-      --color-card: #FFFFFF;
-      --color-border: #E2E8F0;
-      --color-soft-blue: #EFF6FF;
-      --color-soft-indigo: #EEF2FF;
-      --color-footer-muted: #CBD5E1;
-      --color-footer-subtle: #94A3B8;
-      --space-section: clamp(3.5rem, 7vw, 6rem);
-      --shadow-soft: 0 18px 45px rgba(15, 23, 42, 0.10);
-      --radius-card: 16px;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      margin: 0;
-      font-family: "Plus Jakarta Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      color: var(--color-text);
-      background: var(--color-bg);
-      letter-spacing: 0;
-    }
-
-    a,
-    button {
-      transition: color 180ms ease, background 180ms ease, border-color 180ms ease, transform 180ms ease, box-shadow 180ms ease;
-    }
-
-    .container-shell {
-      width: min(1120px, calc(100% - 32px));
-      margin: 0 auto;
-    }
-
-    .header-blur {
-      background: rgba(248, 250, 252, 0.86);
-      backdrop-filter: blur(16px);
-      border-bottom: 1px solid rgba(226, 232, 240, 0.82);
-    }
-
-    .btn-primary {
-      background: var(--color-primary);
-      color: var(--color-card);
-      box-shadow: 0 16px 28px rgba(22, 163, 74, 0.22);
-    }
-
-    .btn-primary:hover {
-      background: var(--color-primary-dark);
-      transform: translateY(-1px);
-    }
-
-    .page-hero {
-      background:
-        radial-gradient(circle at 18% 12%, rgba(22, 163, 74, 0.16), transparent 30%),
-        linear-gradient(145deg, var(--color-primary-light) 0%, var(--color-card) 50%, var(--color-bg) 100%);
-    }
-
-    .legal-card,
-    .summary-card,
-    .toc-card,
-    .trust-card {
-      background: var(--color-card);
-      border: 1px solid var(--color-border);
-      border-radius: var(--radius-card);
-      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
-    }
-
-    .summary-card {
-      border-left: 6px solid var(--color-primary);
-    }
-
-    .toc-card {
-      position: sticky;
-      top: 92px;
-    }
-
-    .toc-link {
-      color: var(--color-text-muted);
-      border-left: 3px solid transparent;
-    }
-
-    .toc-link:hover,
-    .toc-link.is-active {
-      color: var(--color-primary-dark);
-      border-left-color: var(--color-primary);
-      background: var(--color-primary-light);
-    }
-
-    .legal-content h2 {
-      scroll-margin-top: 96px;
-      color: var(--color-text);
-    }
-
-    .legal-content p,
-    .legal-content li {
-      color: var(--color-text-muted);
-      line-height: 1.85;
-    }
-
-    .legal-content ul {
-      margin-top: 1rem;
-      padding-left: 1.25rem;
-    }
-
-    .legal-content li + li {
-      margin-top: 0.55rem;
-    }
-
-    .notice-band {
-      background: linear-gradient(135deg, var(--color-text) 0%, var(--color-primary-dark) 100%);
-    }
-
-    .fade-up {
-      opacity: 0;
-      transform: translateY(18px);
-      transition: opacity 600ms ease, transform 600ms ease;
-    }
-
-    .fade-up.is-visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    @media (max-width: 1023px) {
-      .toc-card {
-        position: static;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
   <header class="header-blur sticky top-0 z-50">
@@ -165,30 +23,30 @@
       </a>
 
       <div class="hidden items-center gap-8 text-sm font-semibold text-[var(--color-text-muted)] md:flex">
-        <a href="index.html#ozellikler" class="hover:text-[var(--color-primary)]">Özellikler</a>
+        <a href="index.html#ozellikler" class="hover:text-[var(--color-primary)]">Ã–zellikler</a>
         <a href="gizlilik-politikasi.html" class="text-[var(--color-primary)]">Gizlilik</a>
         <a href="destek.html" class="hover:text-[var(--color-primary)]">Destek</a>
       </div>
 
       <button class="btn-primary hidden items-center gap-2 rounded-full px-5 py-2.5 text-sm font-bold md:flex" type="button">
         <i data-lucide="bell" class="h-4 w-4"></i>
-        Yakında
+        YakÄ±nda
         <i data-lucide="arrow-right" class="h-4 w-4"></i>
       </button>
 
-      <button id="menuToggle" class="grid h-10 w-10 place-items-center rounded-full border border-[var(--color-border)] bg-[var(--color-card)] text-[var(--color-text)] md:hidden" type="button" aria-label="Menüyü aç" aria-expanded="false">
+      <button id="menuToggle" class="grid h-10 w-10 place-items-center rounded-full border border-[var(--color-border)] bg-[var(--color-card)] text-[var(--color-text)] md:hidden" type="button" aria-label="MenÃ¼yÃ¼ aÃ§" aria-expanded="false">
         <i data-lucide="menu" class="h-5 w-5"></i>
       </button>
     </nav>
 
     <div id="mobileMenu" class="container-shell hidden pb-4 md:hidden">
       <div class="flex flex-col gap-2 rounded-2xl border border-[var(--color-border)] bg-[var(--color-card)] p-3 text-sm font-semibold shadow-lg">
-        <a href="index.html#ozellikler" class="rounded-xl px-3 py-2 text-[var(--color-text-muted)] hover:bg-[var(--color-primary-light)] hover:text-[var(--color-primary-dark)]">Özellikler</a>
+        <a href="index.html#ozellikler" class="rounded-xl px-3 py-2 text-[var(--color-text-muted)] hover:bg-[var(--color-primary-light)] hover:text-[var(--color-primary-dark)]">Ã–zellikler</a>
         <a href="gizlilik-politikasi.html" class="rounded-xl bg-[var(--color-primary-light)] px-3 py-2 text-[var(--color-primary-dark)]">Gizlilik</a>
         <a href="destek.html" class="rounded-xl px-3 py-2 text-[var(--color-text-muted)] hover:bg-[var(--color-primary-light)] hover:text-[var(--color-primary-dark)]">Destek</a>
         <button class="btn-primary mt-1 flex items-center justify-center gap-2 rounded-full px-4 py-2.5 font-bold" type="button">
           <i data-lucide="bell" class="h-4 w-4"></i>
-          Yakında
+          YakÄ±nda
           <i data-lucide="arrow-right" class="h-4 w-4"></i>
         </button>
       </div>
@@ -201,19 +59,19 @@
         <div class="fade-up max-w-3xl">
           <a href="index.html" class="mb-6 inline-flex items-center gap-2 text-sm font-bold text-[var(--color-primary-dark)] hover:text-[var(--color-primary)]">
             <i data-lucide="arrow-left" class="h-4 w-4"></i>
-            Ana sayfaya dön
+            Ana sayfaya dÃ¶n
           </a>
           <p class="inline-flex items-center gap-2 rounded-full border border-[var(--color-border)] bg-white/80 px-4 py-2 text-sm font-bold text-[var(--color-primary-dark)]">
             <i data-lucide="shield-check" class="h-4 w-4"></i>
-            Yerel veri saklama yaklaşımı
+            Yerel veri saklama yaklaÅŸÄ±mÄ±
           </p>
-          <h1 class="mt-6 text-4xl font-extrabold leading-tight sm:text-5xl">Gizlilik Politikası</h1>
+          <h1 class="mt-6 text-4xl font-extrabold leading-tight sm:text-5xl">Gizlilik PolitikasÄ±</h1>
           <p class="mt-5 text-lg leading-8 text-[var(--color-text-muted)]">
-            Sesli Gider, gelir ve gider kayıtlarını telefonunda tutmayı ve finansal verilerini sunucularımıza göndermemeyi temel gizlilik ilkesi olarak benimser.
+            Sesli Gider, gelir ve gider kayÄ±tlarÄ±nÄ± telefonunda tutmayÄ± ve finansal verilerini sunucularÄ±mÄ±za gÃ¶ndermemeyi temel gizlilik ilkesi olarak benimser.
           </p>
           <p class="mt-5 inline-flex items-center gap-2 rounded-full bg-[var(--color-card)] px-4 py-2 text-sm font-bold text-[var(--color-text-muted)] shadow-sm">
             <i data-lucide="calendar-days" class="h-4 w-4 text-[var(--color-primary)]"></i>
-            Son güncelleme: Ocak 2026
+            Son gÃ¼ncelleme: Ocak 2026
           </p>
         </div>
       </div>
@@ -228,14 +86,14 @@
                 <i data-lucide="clipboard-list" class="h-5 w-5"></i>
               </span>
               <div>
-                <h2 class="text-xl font-extrabold">Kısa Özet</h2>
+                <h2 class="text-xl font-extrabold">KÄ±sa Ã–zet</h2>
                 <ul class="mt-4 space-y-3 text-[var(--color-text-muted)]">
-                  <li class="flex gap-3"><i data-lucide="check" class="mt-1 h-4 w-4 shrink-0 text-[var(--color-primary)]"></i><span>Gelir ve gider kayıtlarınız telefonunuzda tutulur.</span></li>
-                  <li class="flex gap-3"><i data-lucide="check" class="mt-1 h-4 w-4 shrink-0 text-[var(--color-primary)]"></i><span>Finansal kayıtlarınız sunucularımıza gönderilmez.</span></li>
-                  <li class="flex gap-3"><i data-lucide="check" class="mt-1 h-4 w-4 shrink-0 text-[var(--color-primary)]"></i><span>Konum verisi toplamayız.</span></li>
-                  <li class="flex gap-3"><i data-lucide="check" class="mt-1 h-4 w-4 shrink-0 text-[var(--color-primary)]"></i><span>Mikrofon sürekli açık değildir; yalnızca sesli giriş başlattığınızda kullanılır.</span></li>
-                  <li class="flex gap-3"><i data-lucide="check" class="mt-1 h-4 w-4 shrink-0 text-[var(--color-primary)]"></i><span>Push bildirimler yalnızca izin verdiğinizde kullanılır.</span></li>
-                  <li class="flex gap-3"><i data-lucide="check" class="mt-1 h-4 w-4 shrink-0 text-[var(--color-primary)]"></i><span>Kategori listeleri ve uygulama içi bilgilendirme içerikleri internet üzerinden alınabilir.</span></li>
+                  <li class="flex gap-3"><i data-lucide="check" class="mt-1 h-4 w-4 shrink-0 text-[var(--color-primary)]"></i><span>Gelir ve gider kayÄ±tlarÄ±nÄ±z telefonunuzda tutulur.</span></li>
+                  <li class="flex gap-3"><i data-lucide="check" class="mt-1 h-4 w-4 shrink-0 text-[var(--color-primary)]"></i><span>Finansal kayÄ±tlarÄ±nÄ±z sunucularÄ±mÄ±za gÃ¶nderilmez.</span></li>
+                  <li class="flex gap-3"><i data-lucide="check" class="mt-1 h-4 w-4 shrink-0 text-[var(--color-primary)]"></i><span>Konum verisi toplamayÄ±z.</span></li>
+                  <li class="flex gap-3"><i data-lucide="check" class="mt-1 h-4 w-4 shrink-0 text-[var(--color-primary)]"></i><span>Mikrofon sÃ¼rekli aÃ§Ä±k deÄŸildir; yalnÄ±zca sesli giriÅŸ baÅŸlattÄ±ÄŸÄ±nÄ±zda kullanÄ±lÄ±r.</span></li>
+                  <li class="flex gap-3"><i data-lucide="check" class="mt-1 h-4 w-4 shrink-0 text-[var(--color-primary)]"></i><span>Push bildirimler yalnÄ±zca izin verdiÄŸinizde kullanÄ±lÄ±r.</span></li>
+                  <li class="flex gap-3"><i data-lucide="check" class="mt-1 h-4 w-4 shrink-0 text-[var(--color-primary)]"></i><span>Kategori listeleri ve uygulama iÃ§i bilgilendirme iÃ§erikleri internet Ã¼zerinden alÄ±nabilir.</span></li>
                 </ul>
               </div>
             </div>
@@ -243,121 +101,121 @@
 
           <div class="legal-content space-y-10">
             <section aria-labelledby="giris">
-              <h2 id="giris" class="text-2xl font-extrabold">1. Giriş</h2>
+              <h2 id="giris" class="text-2xl font-extrabold">1. GiriÅŸ</h2>
               <p class="mt-4">
-                Bu Gizlilik Politikası, Sesli Gider mobil uygulamasını kullanırken hangi verilerin cihazınızda tutulduğunu, hangi destekleyici bilgilerin internet üzerinden alınabileceğini ve izinleri nasıl kontrol edebileceğinizi açıklar.
+                Bu Gizlilik PolitikasÄ±, Sesli Gider mobil uygulamasÄ±nÄ± kullanÄ±rken hangi verilerin cihazÄ±nÄ±zda tutulduÄŸunu, hangi destekleyici bilgilerin internet Ã¼zerinden alÄ±nabileceÄŸini ve izinleri nasÄ±l kontrol edebileceÄŸinizi aÃ§Ä±klar.
               </p>
               <p class="mt-4">
-                Uygulamanın amacı, günlük gelir ve gider kayıtlarını hızlı, anlaşılır ve kullanıcı kontrolünde tutulan bir deneyimle yönetmenize yardımcı olmaktır.
+                UygulamanÄ±n amacÄ±, gÃ¼nlÃ¼k gelir ve gider kayÄ±tlarÄ±nÄ± hÄ±zlÄ±, anlaÅŸÄ±lÄ±r ve kullanÄ±cÄ± kontrolÃ¼nde tutulan bir deneyimle yÃ¶netmenize yardÄ±mcÄ± olmaktÄ±r.
               </p>
             </section>
 
             <section aria-labelledby="veriler">
-              <h2 id="veriler" class="text-2xl font-extrabold">2. Topladığımız veya Kullandığımız Veriler</h2>
+              <h2 id="veriler" class="text-2xl font-extrabold">2. TopladÄ±ÄŸÄ±mÄ±z veya KullandÄ±ÄŸÄ±mÄ±z Veriler</h2>
               <p class="mt-4">
-                Sesli Gider'de kullanılan bilgiler iki ana grupta değerlendirilir:
+                Sesli Gider'de kullanÄ±lan bilgiler iki ana grupta deÄŸerlendirilir:
               </p>
               <ul>
-                <li><strong>Cihazda tutulan bilgiler:</strong> Gelir ve gider kayıtlarınız, kategori seçimleriniz ve uygulama içindeki tercihlerinize ilişkin yerel bilgiler telefonunuzda saklanır.</li>
-                <li><strong>İnternet üzerinden alınabilecek destekleyici bilgiler:</strong> Kategori listeleri, uygulama içi bilgilendirme içerikleri ve izin verdiğiniz bildirimlere ilişkin destekleyici içerikler internet bağlantısı ile alınabilir.</li>
+                <li><strong>Cihazda tutulan bilgiler:</strong> Gelir ve gider kayÄ±tlarÄ±nÄ±z, kategori seÃ§imleriniz ve uygulama iÃ§indeki tercihlerinize iliÅŸkin yerel bilgiler telefonunuzda saklanÄ±r.</li>
+                <li><strong>Ä°nternet Ã¼zerinden alÄ±nabilecek destekleyici bilgiler:</strong> Kategori listeleri, uygulama iÃ§i bilgilendirme iÃ§erikleri ve izin verdiÄŸiniz bildirimlere iliÅŸkin destekleyici iÃ§erikler internet baÄŸlantÄ±sÄ± ile alÄ±nabilir.</li>
               </ul>
             </section>
 
             <section aria-labelledby="finansal-veriler">
               <h2 id="finansal-veriler" class="text-2xl font-extrabold">3. Finansal Veriler</h2>
               <p class="mt-4">
-                Gelir ve gider kayıtlarınız telefonunuzda tutulur. Harcama geçmişiniz, gelir kayıtlarınız, tutarlarınız, açıklamalarınız veya kişisel bütçe bilgileriniz sunucularımıza gönderilmez.
+                Gelir ve gider kayÄ±tlarÄ±nÄ±z telefonunuzda tutulur. Harcama geÃ§miÅŸiniz, gelir kayÄ±tlarÄ±nÄ±z, tutarlarÄ±nÄ±z, aÃ§Ä±klamalarÄ±nÄ±z veya kiÅŸisel bÃ¼tÃ§e bilgileriniz sunucularÄ±mÄ±za gÃ¶nderilmez.
               </p>
               <p class="mt-4">
-                Bu yaklaşım, finansal kayıtlarınız üzerinde kontrolün sizde kalması için tasarlanmıştır. Kayıtları uygulama içinden düzenleyebilir veya silebilirsiniz.
+                Bu yaklaÅŸÄ±m, finansal kayÄ±tlarÄ±nÄ±z Ã¼zerinde kontrolÃ¼n sizde kalmasÄ± iÃ§in tasarlanmÄ±ÅŸtÄ±r. KayÄ±tlarÄ± uygulama iÃ§inden dÃ¼zenleyebilir veya silebilirsiniz.
               </p>
             </section>
 
             <section aria-labelledby="mikrofon">
-              <h2 id="mikrofon" class="text-2xl font-extrabold">4. Mikrofon Kullanımı</h2>
+              <h2 id="mikrofon" class="text-2xl font-extrabold">4. Mikrofon KullanÄ±mÄ±</h2>
               <p class="mt-4">
-                Mikrofon yalnızca uygulama içinde sesli giriş başlattığınızda kullanılır. Sesli Gider arka planda sürekli dinleme yapmaz ve mikrofonu siz sesli kayıt işlemini başlatmadan kullanmaz.
+                Mikrofon yalnÄ±zca uygulama iÃ§inde sesli giriÅŸ baÅŸlattÄ±ÄŸÄ±nÄ±zda kullanÄ±lÄ±r. Sesli Gider arka planda sÃ¼rekli dinleme yapmaz ve mikrofonu siz sesli kayÄ±t iÅŸlemini baÅŸlatmadan kullanmaz.
               </p>
               <p class="mt-4">
-                Mikrofon iznini cihaz ayarlarınızdan istediğiniz zaman kapatabilirsiniz. Mikrofon izni kapalıyken kayıtlarınızı manuel olarak yönetebilirsiniz.
+                Mikrofon iznini cihaz ayarlarÄ±nÄ±zdan istediÄŸiniz zaman kapatabilirsiniz. Mikrofon izni kapalÄ±yken kayÄ±tlarÄ±nÄ±zÄ± manuel olarak yÃ¶netebilirsiniz.
               </p>
             </section>
 
             <section aria-labelledby="konum">
               <h2 id="konum" class="text-2xl font-extrabold">5. Konum Verisi</h2>
               <p class="mt-4">
-                Sesli Gider konum izni istemez, konum verisi toplamaz ve konum takibi yapmaz. Bu nedenle uygulama içinde konum geçmişi tutulmaz.
+                Sesli Gider konum izni istemez, konum verisi toplamaz ve konum takibi yapmaz. Bu nedenle uygulama iÃ§inde konum geÃ§miÅŸi tutulmaz.
               </p>
             </section>
 
             <section aria-labelledby="bildirimler">
               <h2 id="bildirimler" class="text-2xl font-extrabold">6. Push Bildirimleri</h2>
               <p class="mt-4">
-                Bildirimler yalnızca izin verdiğinizde kullanılır. Hatırlatma veya bilgilendirme gönderebilmek için cihazınıza ait bildirim kimliği kullanılabilir.
+                Bildirimler yalnÄ±zca izin verdiÄŸinizde kullanÄ±lÄ±r. HatÄ±rlatma veya bilgilendirme gÃ¶nderebilmek iÃ§in cihazÄ±nÄ±za ait bildirim kimliÄŸi kullanÄ±labilir.
               </p>
               <p class="mt-4">
-                Bildirim içerikleri finansal kayıtlarınızı içermez. Bildirim iznini cihaz ayarlarınızdan istediğiniz zaman kapatabilirsiniz.
+                Bildirim iÃ§erikleri finansal kayÄ±tlarÄ±nÄ±zÄ± iÃ§ermez. Bildirim iznini cihaz ayarlarÄ±nÄ±zdan istediÄŸiniz zaman kapatabilirsiniz.
               </p>
             </section>
 
             <section aria-labelledby="kategoriler">
-              <h2 id="kategoriler" class="text-2xl font-extrabold">7. Kategoriler ve Uygulama İçi Bilgilendirmeler</h2>
+              <h2 id="kategoriler" class="text-2xl font-extrabold">7. Kategoriler ve Uygulama Ä°Ã§i Bilgilendirmeler</h2>
               <p class="mt-4">
-                Kategori listeleri ve uygulama içi bilgilendirme içerikleri internet üzerinden alınabilir. Bu içerikler uygulama deneyimini güncel ve anlaşılır tutmak için kullanılabilir.
+                Kategori listeleri ve uygulama iÃ§i bilgilendirme iÃ§erikleri internet Ã¼zerinden alÄ±nabilir. Bu iÃ§erikler uygulama deneyimini gÃ¼ncel ve anlaÅŸÄ±lÄ±r tutmak iÃ§in kullanÄ±labilir.
               </p>
               <p class="mt-4">
-                Bu süreç finansal kayıtlarınızın sunucularımıza gönderilmesi anlamına gelmez. Gelir ve gider kayıtlarınız telefonunuzda tutulur.
+                Bu sÃ¼reÃ§ finansal kayÄ±tlarÄ±nÄ±zÄ±n sunucularÄ±mÄ±za gÃ¶nderilmesi anlamÄ±na gelmez. Gelir ve gider kayÄ±tlarÄ±nÄ±z telefonunuzda tutulur.
               </p>
             </section>
 
             <section aria-labelledby="paylasim">
-              <h2 id="paylasim" class="text-2xl font-extrabold">8. Verilerin Paylaşımı</h2>
+              <h2 id="paylasim" class="text-2xl font-extrabold">8. Verilerin PaylaÅŸÄ±mÄ±</h2>
               <p class="mt-4">
-                Finansal kayıtlarınız sunucularımıza gönderilmediği için üçüncü taraflarla paylaşılmaz. Sesli Gider konum verisi toplamaz ve konum verisi paylaşımı yapmaz.
+                Finansal kayÄ±tlarÄ±nÄ±z sunucularÄ±mÄ±za gÃ¶nderilmediÄŸi iÃ§in Ã¼Ã§Ã¼ncÃ¼ taraflarla paylaÅŸÄ±lmaz. Sesli Gider konum verisi toplamaz ve konum verisi paylaÅŸÄ±mÄ± yapmaz.
               </p>
               <p class="mt-4">
-                Destek için bizimle iletişime geçtiğinizde, yalnızca sizin paylaştığınız bilgiler talebinizi yanıtlamak amacıyla kullanılabilir.
+                Destek iÃ§in bizimle iletiÅŸime geÃ§tiÄŸinizde, yalnÄ±zca sizin paylaÅŸtÄ±ÄŸÄ±nÄ±z bilgiler talebinizi yanÄ±tlamak amacÄ±yla kullanÄ±labilir.
               </p>
             </section>
 
             <section aria-labelledby="saklama">
               <h2 id="saklama" class="text-2xl font-extrabold">9. Veri Saklama</h2>
               <p class="mt-4">
-                Gelir ve gider kayıtlarınız yerel olarak telefonunuzda saklanır. Kayıtların saklanma süresi, kayıtları uygulama içinden silmenize veya uygulamayı cihazınızdan kaldırmanıza bağlıdır.
+                Gelir ve gider kayÄ±tlarÄ±nÄ±z yerel olarak telefonunuzda saklanÄ±r. KayÄ±tlarÄ±n saklanma sÃ¼resi, kayÄ±tlarÄ± uygulama iÃ§inden silmenize veya uygulamayÄ± cihazÄ±nÄ±zdan kaldÄ±rmanÄ±za baÄŸlÄ±dÄ±r.
               </p>
             </section>
 
             <section aria-labelledby="kontrol">
-              <h2 id="kontrol" class="text-2xl font-extrabold">10. Kullanıcının Kontrolü</h2>
+              <h2 id="kontrol" class="text-2xl font-extrabold">10. KullanÄ±cÄ±nÄ±n KontrolÃ¼</h2>
               <p class="mt-4">
-                Verileriniz ve izinleriniz üzerinde kontrol sizdedir. Aşağıdaki işlemleri istediğiniz zaman yapabilirsiniz:
+                Verileriniz ve izinleriniz Ã¼zerinde kontrol sizdedir. AÅŸaÄŸÄ±daki iÅŸlemleri istediÄŸiniz zaman yapabilirsiniz:
               </p>
               <ul>
-                <li>Gelir ve gider kayıtlarınızı uygulama içinden silebilirsiniz.</li>
-                <li>Mikrofon iznini cihaz ayarlarınızdan kapatabilirsiniz.</li>
-                <li>Bildirim iznini cihaz ayarlarınızdan kapatabilirsiniz.</li>
-                <li>Uygulamayı cihazınızdan kaldırarak yerel verileri temizleyebilirsiniz.</li>
+                <li>Gelir ve gider kayÄ±tlarÄ±nÄ±zÄ± uygulama iÃ§inden silebilirsiniz.</li>
+                <li>Mikrofon iznini cihaz ayarlarÄ±nÄ±zdan kapatabilirsiniz.</li>
+                <li>Bildirim iznini cihaz ayarlarÄ±nÄ±zdan kapatabilirsiniz.</li>
+                <li>UygulamayÄ± cihazÄ±nÄ±zdan kaldÄ±rarak yerel verileri temizleyebilirsiniz.</li>
               </ul>
             </section>
 
             <section aria-labelledby="cocuklar">
-              <h2 id="cocuklar" class="text-2xl font-extrabold">11. Çocukların Gizliliği</h2>
+              <h2 id="cocuklar" class="text-2xl font-extrabold">11. Ã‡ocuklarÄ±n GizliliÄŸi</h2>
               <p class="mt-4">
-                Sesli Gider çocuklara yönelik olarak tasarlanmamıştır. Uygulamanın çocuklar tarafından kullanılması durumunda cihaz ve uygulama izinlerinin ebeveyn veya yasal temsilci tarafından kontrol edilmesi önerilir.
+                Sesli Gider Ã§ocuklara yÃ¶nelik olarak tasarlanmamÄ±ÅŸtÄ±r. UygulamanÄ±n Ã§ocuklar tarafÄ±ndan kullanÄ±lmasÄ± durumunda cihaz ve uygulama izinlerinin ebeveyn veya yasal temsilci tarafÄ±ndan kontrol edilmesi Ã¶nerilir.
               </p>
             </section>
 
             <section aria-labelledby="degisiklikler">
-              <h2 id="degisiklikler" class="text-2xl font-extrabold">12. Değişiklikler</h2>
+              <h2 id="degisiklikler" class="text-2xl font-extrabold">12. DeÄŸiÅŸiklikler</h2>
               <p class="mt-4">
-                Bu Gizlilik Politikası zaman zaman güncellenebilir. Önemli değişiklikler olduğunda uygulama içi bilgilendirme veya uygun görülen iletişim kanalları üzerinden bilgi verilebilir.
+                Bu Gizlilik PolitikasÄ± zaman zaman gÃ¼ncellenebilir. Ã–nemli deÄŸiÅŸiklikler olduÄŸunda uygulama iÃ§i bilgilendirme veya uygun gÃ¶rÃ¼len iletiÅŸim kanallarÄ± Ã¼zerinden bilgi verilebilir.
               </p>
             </section>
 
             <section aria-labelledby="iletisim">
-              <h2 id="iletisim" class="text-2xl font-extrabold">13. İletişim</h2>
+              <h2 id="iletisim" class="text-2xl font-extrabold">13. Ä°letiÅŸim</h2>
               <p class="mt-4">
-                Gizlilik, veri silme veya uygulama izinleriyle ilgili sorularınız için bizimle iletişime geçebilirsiniz:
+                Gizlilik, veri silme veya uygulama izinleriyle ilgili sorularÄ±nÄ±z iÃ§in bizimle iletiÅŸime geÃ§ebilirsiniz:
               </p>
               <p class="mt-4">
                 <a href="mailto:destek@sesligider.com" class="font-extrabold text-[var(--color-primary)] underline">destek@sesligider.com</a>
@@ -370,22 +228,22 @@
           <div class="toc-card p-5">
             <div class="mb-4 flex items-center gap-2 font-extrabold">
               <i data-lucide="list" class="h-5 w-5 text-[var(--color-primary)]"></i>
-              İçindekiler
+              Ä°Ã§indekiler
             </div>
-            <nav class="space-y-1 text-sm font-semibold" aria-label="Gizlilik politikası içindekiler">
-              <a class="toc-link block rounded-r-xl px-3 py-2" href="#giris">Giriş</a>
-              <a class="toc-link block rounded-r-xl px-3 py-2" href="#veriler">Kullanılan Veriler</a>
+            <nav class="space-y-1 text-sm font-semibold" aria-label="Gizlilik politikasÄ± iÃ§indekiler">
+              <a class="toc-link block rounded-r-xl px-3 py-2" href="#giris">GiriÅŸ</a>
+              <a class="toc-link block rounded-r-xl px-3 py-2" href="#veriler">KullanÄ±lan Veriler</a>
               <a class="toc-link block rounded-r-xl px-3 py-2" href="#finansal-veriler">Finansal Veriler</a>
-              <a class="toc-link block rounded-r-xl px-3 py-2" href="#mikrofon">Mikrofon Kullanımı</a>
+              <a class="toc-link block rounded-r-xl px-3 py-2" href="#mikrofon">Mikrofon KullanÄ±mÄ±</a>
               <a class="toc-link block rounded-r-xl px-3 py-2" href="#konum">Konum Verisi</a>
               <a class="toc-link block rounded-r-xl px-3 py-2" href="#bildirimler">Push Bildirimleri</a>
               <a class="toc-link block rounded-r-xl px-3 py-2" href="#kategoriler">Kategoriler</a>
-              <a class="toc-link block rounded-r-xl px-3 py-2" href="#paylasim">Verilerin Paylaşımı</a>
+              <a class="toc-link block rounded-r-xl px-3 py-2" href="#paylasim">Verilerin PaylaÅŸÄ±mÄ±</a>
               <a class="toc-link block rounded-r-xl px-3 py-2" href="#saklama">Veri Saklama</a>
-              <a class="toc-link block rounded-r-xl px-3 py-2" href="#kontrol">Kullanıcı Kontrolü</a>
-              <a class="toc-link block rounded-r-xl px-3 py-2" href="#cocuklar">Çocukların Gizliliği</a>
-              <a class="toc-link block rounded-r-xl px-3 py-2" href="#degisiklikler">Değişiklikler</a>
-              <a class="toc-link block rounded-r-xl px-3 py-2" href="#iletisim">İletişim</a>
+              <a class="toc-link block rounded-r-xl px-3 py-2" href="#kontrol">KullanÄ±cÄ± KontrolÃ¼</a>
+              <a class="toc-link block rounded-r-xl px-3 py-2" href="#cocuklar">Ã‡ocuklarÄ±n GizliliÄŸi</a>
+              <a class="toc-link block rounded-r-xl px-3 py-2" href="#degisiklikler">DeÄŸiÅŸiklikler</a>
+              <a class="toc-link block rounded-r-xl px-3 py-2" href="#iletisim">Ä°letiÅŸim</a>
             </nav>
           </div>
         </aside>
@@ -396,8 +254,8 @@
       <div class="container-shell grid gap-5 md:grid-cols-3">
         <article class="trust-card border-white/10 bg-white/10 p-5 text-white">
           <i data-lucide="smartphone" class="h-7 w-7 text-[var(--color-primary-light)]"></i>
-          <h3 class="mt-4 font-extrabold">Kayıtlar telefonunda</h3>
-          <p class="mt-2 leading-7 text-[var(--color-footer-muted)]">Gelir ve gider kayıtları cihazında tutulur.</p>
+          <h3 class="mt-4 font-extrabold">KayÄ±tlar telefonunda</h3>
+          <p class="mt-2 leading-7 text-[var(--color-footer-muted)]">Gelir ve gider kayÄ±tlarÄ± cihazÄ±nda tutulur.</p>
         </article>
         <article class="trust-card border-white/10 bg-white/10 p-5 text-white">
           <i data-lucide="map-pin-off" class="h-7 w-7 text-[var(--color-primary-light)]"></i>
@@ -406,8 +264,8 @@
         </article>
         <article class="trust-card border-white/10 bg-white/10 p-5 text-white">
           <i data-lucide="mic-off" class="h-7 w-7 text-[var(--color-primary-light)]"></i>
-          <h3 class="mt-4 font-extrabold">Sürekli dinleme yok</h3>
-          <p class="mt-2 leading-7 text-[var(--color-footer-muted)]">Mikrofon yalnızca sesli giriş başlatıldığında kullanılır.</p>
+          <h3 class="mt-4 font-extrabold">SÃ¼rekli dinleme yok</h3>
+          <p class="mt-2 leading-7 text-[var(--color-footer-muted)]">Mikrofon yalnÄ±zca sesli giriÅŸ baÅŸlatÄ±ldÄ±ÄŸÄ±nda kullanÄ±lÄ±r.</p>
         </article>
       </div>
     </section>
@@ -423,69 +281,23 @@
             </span>
             Sesli Gider
           </a>
-          <p class="mt-4 max-w-md leading-7 text-[var(--color-footer-muted)]">Gelir ve giderlerini konuşarak kaydet.</p>
-          <p class="mt-2 max-w-md leading-7 text-[var(--color-footer-muted)]">Finansal kayıtlarınız telefonunuzda tutulur.</p>
+          <p class="mt-4 max-w-md leading-7 text-[var(--color-footer-muted)]">Gelir ve giderlerini konuÅŸarak kaydet.</p>
+          <p class="mt-2 max-w-md leading-7 text-[var(--color-footer-muted)]">Finansal kayÄ±tlarÄ±nÄ±z telefonunuzda tutulur.</p>
         </div>
         <div class="flex flex-wrap gap-x-6 gap-y-3 text-sm font-semibold text-[var(--color-footer-muted)] lg:justify-end">
-          <a href="index.html#ozellikler" class="hover:text-white">Özellikler</a>
-          <a href="gizlilik-politikasi.html" class="text-white">Gizlilik Politikası</a>
-          <a href="kullanim-sartlari.html" class="hover:text-white">Kullanım Şartları</a>
+          <a href="index.html#ozellikler" class="hover:text-white">Ã–zellikler</a>
+          <a href="gizlilik-politikasi.html" class="text-white">Gizlilik PolitikasÄ±</a>
+          <a href="kullanim-sartlari.html" class="hover:text-white">KullanÄ±m ÅartlarÄ±</a>
           <a href="destek.html" class="hover:text-white">Destek</a>
           <a href="veri-silme.html" class="hover:text-white">Veri Silme</a>
-          <a href="iletisim.html" class="hover:text-white">İletişim</a>
+          <a href="iletisim.html" class="hover:text-white">Ä°letiÅŸim</a>
         </div>
       </div>
       <div class="mt-10 border-t border-white/10 pt-6 text-sm text-[var(--color-footer-subtle)]">
-        © 2026 Sesli Gider. Tüm hakları saklıdır.
+        Â© 2026 Sesli Gider. TÃ¼m haklarÄ± saklÄ±dÄ±r.
       </div>
     </div>
   </footer>
-
-  <script>
-    lucide.createIcons();
-
-    const menuToggle = document.getElementById("menuToggle");
-    const mobileMenu = document.getElementById("mobileMenu");
-
-    menuToggle.addEventListener("click", () => {
-      const isOpen = !mobileMenu.classList.contains("hidden");
-      mobileMenu.classList.toggle("hidden");
-      menuToggle.setAttribute("aria-expanded", String(!isOpen));
-      menuToggle.setAttribute("aria-label", isOpen ? "Menüyü aç" : "Menüyü kapat");
-    });
-
-    document.querySelectorAll("#mobileMenu a").forEach((link) => {
-      link.addEventListener("click", () => {
-        mobileMenu.classList.add("hidden");
-        menuToggle.setAttribute("aria-expanded", "false");
-        menuToggle.setAttribute("aria-label", "Menüyü aç");
-      });
-    });
-
-    const observedSections = document.querySelectorAll(".legal-content section");
-    const tocLinks = document.querySelectorAll(".toc-link");
-    const sectionObserver = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          tocLinks.forEach((link) => {
-            link.classList.toggle("is-active", link.getAttribute("href") === `#${entry.target.querySelector("h2").id}`);
-          });
-        }
-      });
-    }, { rootMargin: "-20% 0px -65% 0px", threshold: 0.1 });
-
-    observedSections.forEach((section) => sectionObserver.observe(section));
-
-    const fadeObserver = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("is-visible");
-          fadeObserver.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.12 });
-
-    document.querySelectorAll(".fade-up").forEach((element) => fadeObserver.observe(element));
-  </script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
