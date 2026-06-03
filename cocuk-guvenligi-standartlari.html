@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Çocuk Güvenliği Standartları - Sesli Gider</title>
+  <meta name="description" content="Sesli Gider'in çocuk güvenliği yaklaşımı, uygulama kapsamı, veri koruma ilkeleri ve iletişim kanalları hakkında bilgi alın." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="header-blur sticky top-0 z-50">
+    <nav class="container-shell flex h-16 items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2 font-extrabold text-[var(--color-primary-dark)]" aria-label="Sesli Gider ana sayfa">
+        <span class="grid h-9 w-9 place-items-center rounded-full bg-[var(--color-primary-light)]"><i data-lucide="mic" class="h-5 w-5 text-[var(--color-primary)]"></i></span>
+        <span>Sesli Gider</span>
+      </a>
+      <div class="hidden items-center gap-8 text-sm font-semibold text-[var(--color-text-muted)] md:flex">
+        <a href="index.html#ozellikler" class="hover:text-[var(--color-primary)]">Özellikler</a>
+        <a href="gizlilik-politikasi.html" class="hover:text-[var(--color-primary)]">Gizlilik</a>
+        <a href="destek.html" class="hover:text-[var(--color-primary)]">Destek</a>
+      </div>
+      <button class="btn-primary hidden items-center gap-2 rounded-full px-5 py-2.5 text-sm font-bold md:flex" type="button">
+        <i data-lucide="bell" class="h-4 w-4"></i>
+        Yakında
+        <i data-lucide="arrow-right" class="h-4 w-4"></i>
+      </button>
+      <button id="menuToggle" class="grid h-10 w-10 place-items-center rounded-full border border-[var(--color-border)] bg-[var(--color-card)] text-[var(--color-text)] md:hidden" type="button" aria-label="Menüyü aç" aria-expanded="false">
+        <i data-lucide="menu" class="h-5 w-5"></i>
+      </button>
+    </nav>
+    <div id="mobileMenu" class="container-shell hidden pb-4 md:hidden">
+      <div class="flex flex-col gap-2 rounded-2xl border border-[var(--color-border)] bg-[var(--color-card)] p-3 text-sm font-semibold shadow-lg">
+        <a href="index.html#ozellikler" class="rounded-xl px-3 py-2 text-[var(--color-text-muted)] hover:bg-[var(--color-primary-light)] hover:text-[var(--color-primary-dark)]">Özellikler</a>
+        <a href="gizlilik-politikasi.html" class="rounded-xl px-3 py-2 text-[var(--color-text-muted)] hover:bg-[var(--color-primary-light)] hover:text-[var(--color-primary-dark)]">Gizlilik</a>
+        <a href="destek.html" class="rounded-xl px-3 py-2 text-[var(--color-text-muted)] hover:bg-[var(--color-primary-light)] hover:text-[var(--color-primary-dark)]">Destek</a>
+        <button class="btn-primary mt-1 flex items-center justify-center gap-2 rounded-full px-4 py-2.5 font-bold" type="button">
+          <i data-lucide="bell" class="h-4 w-4"></i>
+          Yakında
+          <i data-lucide="arrow-right" class="h-4 w-4"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero py-16 md:py-20">
+      <div class="container-shell">
+        <div class="fade-up max-w-3xl">
+          <a href="index.html" class="mb-6 inline-flex items-center gap-2 text-sm font-bold text-[var(--color-primary-dark)] hover:text-[var(--color-primary)]">
+            <i data-lucide="arrow-left" class="h-4 w-4"></i>
+            Ana sayfaya dön
+          </a>
+          <p class="inline-flex items-center gap-2 rounded-full border border-[var(--color-border)] bg-white/80 px-4 py-2 text-sm font-bold text-[var(--color-primary-dark)]">
+            <i data-lucide="shield" class="h-4 w-4"></i>
+            Güvenlik ve uygun kullanım
+          </p>
+          <h1 class="mt-6 text-4xl font-extrabold leading-tight sm:text-5xl">Çocuk Güvenliği Standartları</h1>
+          <p class="mt-5 text-lg leading-8 text-[var(--color-text-muted)]">
+            Sesli Gider kişisel gelir/gider takibi için geliştirilmiş bir uygulamadır. Çocuklara yönelik değildir ve çocuklardan bilerek kişisel veri toplamayı amaçlamaz.
+          </p>
+          <p class="mt-5 inline-flex items-center gap-2 rounded-full bg-[var(--color-card)] px-4 py-2 text-sm font-bold text-[var(--color-text-muted)] shadow-sm">
+            <i data-lucide="calendar-days" class="h-4 w-4 text-[var(--color-primary)]"></i>
+            Son güncelleme: Haziran 2026
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-[var(--space-section)]">
+      <div class="container-shell grid gap-8 lg:grid-cols-[minmax(0,3fr)_minmax(260px,1fr)] lg:items-start">
+        <article class="legal-card p-5 sm:p-8 lg:p-10">
+          <div class="summary-card mb-10 p-5 sm:p-6">
+            <div class="flex items-start gap-3">
+              <span class="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-[var(--color-primary-light)] text-[var(--color-primary-dark)]"><i data-lucide="shield-check" class="h-5 w-5"></i></span>
+              <div>
+                <h2 class="text-xl font-extrabold">Kısa Özet</h2>
+                <ul class="mt-4 space-y-3 text-[var(--color-text-muted)]">
+                  <li class="flex gap-3"><i data-lucide="check" class="mt-1 h-4 w-4 shrink-0 text-[var(--color-primary)]"></i><span>Sesli Gider çocuklara yönelik bir uygulama değildir.</span></li>
+                  <li class="flex gap-3"><i data-lucide="check" class="mt-1 h-4 w-4 shrink-0 text-[var(--color-primary)]"></i><span>Uygulama sosyal paylaşım, mesajlaşma veya kullanıcılar arası iletişim özelliği sunmaz.</span></li>
+                  <li class="flex gap-3"><i data-lucide="check" class="mt-1 h-4 w-4 shrink-0 text-[var(--color-primary)]"></i><span>Konum verisi toplanmaz; finansal kayıtlar sunucularımıza gönderilmez.</span></li>
+                  <li class="flex gap-3"><i data-lucide="check" class="mt-1 h-4 w-4 shrink-0 text-[var(--color-primary)]"></i><span>Mikrofon yalnızca kullanıcı sesli giriş başlattığında kullanılır.</span></li>
+                  <li class="flex gap-3"><i data-lucide="check" class="mt-1 h-4 w-4 shrink-0 text-[var(--color-primary)]"></i><span>Çocuk güvenliği veya uygunsuz kullanım bildirimleri için destek e-postası kullanılabilir.</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="legal-content space-y-10">
+            <section aria-labelledby="kapsam">
+              <h2 id="kapsam" class="text-2xl font-extrabold">1. Uygulamanın Kapsamı</h2>
+              <p class="mt-4">Sesli Gider, kullanıcıların günlük gelir ve giderlerini Türkçe konuşarak veya manuel olarak kaydetmesine yardımcı olan kişisel takip uygulamasıdır.</p>
+              <p class="mt-4">Uygulama çocuklara yönelik içerik, oyunlaştırılmış çocuk deneyimi, sosyal ağ, mesajlaşma veya kullanıcılar arası paylaşım alanı sunmaz.</p>
+            </section>
+
+            <section aria-labelledby="cocuklara-yonelik-degil">
+              <h2 id="cocuklara-yonelik-degil" class="text-2xl font-extrabold">2. Çocuklara Yönelik Değildir</h2>
+              <p class="mt-4">Sesli Gider çocuklara yönelik olarak tasarlanmamıştır. Uygulamanın çocuklar tarafından kullanılması durumunda cihaz erişimi, uygulama izinleri ve kullanım amacı ebeveyn veya yasal temsilci tarafından kontrol edilmelidir.</p>
+              <p class="mt-4">Çocuklardan bilerek kişisel veri toplamayız. Böyle bir durumdan haberdar olursak destek kanalı üzerinden bildirilen talebi inceleyip uygun adımları atarız.</p>
+            </section>
+
+            <section aria-labelledby="guvenli-deneyim">
+              <h2 id="guvenli-deneyim" class="text-2xl font-extrabold">3. Güvenli Deneyim İlkeleri</h2>
+              <ul>
+                <li>Uygulamada kullanıcılar arası mesajlaşma veya herkese açık profil alanı yoktur.</li>
+                <li>Uygulama konum izni istemez, konum verisi toplamaz ve konum takibi yapmaz.</li>
+                <li>Finansal kayıtlar telefonunuzda tutulur; sunucularımıza gönderilmez.</li>
+                <li>Mikrofon sürekli açık değildir; yalnızca kullanıcı sesli giriş başlattığında kullanılır.</li>
+                <li>Bildirimler yalnızca izin verildiğinde kullanılır ve cihaz ayarlarından kapatılabilir.</li>
+              </ul>
+            </section>
+
+            <section aria-labelledby="ebeveyn-kontrolu">
+              <h2 id="ebeveyn-kontrolu" class="text-2xl font-extrabold">4. Ebeveyn ve Yasal Temsilci Kontrolü</h2>
+              <p class="mt-4">Ebeveynler veya yasal temsilciler, çocukların cihaz kullanımını, mikrofon ve bildirim izinlerini, uygulama yükleme/kaldırma işlemlerini cihaz ayarlarından yönetebilir.</p>
+              <p class="mt-4">Uygulamada tutulan gelir/gider kayıtları yerel olduğundan, cihaz güvenliği ve cihaz erişimi kullanıcı ya da cihazı yöneten yetişkinin sorumluluğundadır.</p>
+            </section>
+
+            <section aria-labelledby="bildirim">
+              <h2 id="bildirim" class="text-2xl font-extrabold">5. Bildirim ve İnceleme Süreci</h2>
+              <p class="mt-4">Çocuk güvenliğiyle ilgili bir endişe, uygunsuz kullanım şüphesi veya veri silme talebi varsa <a href="mailto:destek@sesligider.com" class="font-extrabold text-[var(--color-primary)] underline">destek@sesligider.com</a> adresine yazabilirsiniz.</p>
+              <p class="mt-4">Bildirimlerde olayın kısa açıklamasını, ilgili cihaz veya uygulama kullanım bağlamını ve talebinizi belirtmeniz inceleme sürecini kolaylaştırır.</p>
+            </section>
+
+            <section aria-labelledby="guncellemeler">
+              <h2 id="guncellemeler" class="text-2xl font-extrabold">6. Standartların Güncellenmesi</h2>
+              <p class="mt-4">Bu Çocuk Güvenliği Standartları, uygulamanın özellikleri veya geçerli platform gereksinimleri değiştikçe güncellenebilir. En güncel metin bu sayfada yayımlanır.</p>
+            </section>
+
+            <section aria-labelledby="iletisim">
+              <h2 id="iletisim" class="text-2xl font-extrabold">7. İletişim</h2>
+              <p class="mt-4">Çocuk güvenliği, gizlilik veya veri silme konularındaki tüm talepler için destek adresimiz:</p>
+              <p class="mt-4"><a href="mailto:destek@sesligider.com" class="font-extrabold text-[var(--color-primary)] underline">destek@sesligider.com</a></p>
+            </section>
+          </div>
+        </article>
+
+        <aside class="fade-up">
+          <div class="toc-card p-5">
+            <div class="mb-4 flex items-center gap-2 font-extrabold">
+              <i data-lucide="list" class="h-5 w-5 text-[var(--color-primary)]"></i>
+              İçindekiler
+            </div>
+            <nav class="space-y-1 text-sm font-semibold" aria-label="Çocuk güvenliği içindekiler">
+              <a class="toc-link block rounded-r-xl px-3 py-2" href="#kapsam">Uygulamanın Kapsamı</a>
+              <a class="toc-link block rounded-r-xl px-3 py-2" href="#cocuklara-yonelik-degil">Çocuklara Yönelik Değil</a>
+              <a class="toc-link block rounded-r-xl px-3 py-2" href="#guvenli-deneyim">Güvenli Deneyim</a>
+              <a class="toc-link block rounded-r-xl px-3 py-2" href="#ebeveyn-kontrolu">Ebeveyn Kontrolü</a>
+              <a class="toc-link block rounded-r-xl px-3 py-2" href="#bildirim">Bildirim Süreci</a>
+              <a class="toc-link block rounded-r-xl px-3 py-2" href="#guncellemeler">Güncellemeler</a>
+              <a class="toc-link block rounded-r-xl px-3 py-2" href="#iletisim">İletişim</a>
+            </nav>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-[var(--color-border)] bg-[var(--color-text)] py-12 text-white">
+    <div class="container-shell">
+      <div class="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-start">
+        <div>
+          <a href="index.html" class="inline-flex items-center gap-2 font-extrabold">
+            <span class="grid h-9 w-9 place-items-center rounded-full bg-[var(--color-primary)]"><i data-lucide="mic" class="h-5 w-5"></i></span>
+            Sesli Gider
+          </a>
+          <p class="mt-4 max-w-md leading-7 text-[var(--color-footer-muted)]">Gelir ve giderlerini konuşarak kaydet.</p>
+          <p class="mt-2 max-w-md leading-7 text-[var(--color-footer-muted)]">Finansal kayıtlarınız telefonunuzda tutulur.</p>
+        </div>
+        <div class="flex flex-wrap gap-x-6 gap-y-3 text-sm font-semibold text-[var(--color-footer-muted)] lg:justify-end">
+          <a href="index.html#ozellikler" class="hover:text-white">Özellikler</a>
+          <a href="gizlilik-politikasi.html" class="hover:text-white">Gizlilik Politikası</a>
+          <a href="kullanim-sartlari.html" class="hover:text-white">Kullanım Şartları</a>
+          <a href="destek.html" class="hover:text-white">Destek</a>
+          <a href="veri-silme.html" class="hover:text-white">Veri Silme</a>
+          <a href="iletisim.html" class="hover:text-white">İletişim</a>
+          <a href="cocuk-guvenligi-standartlari.html" class="text-white">Çocuk Güvenliği</a>
+        </div>
+      </div>
+      <div class="mt-10 border-t border-white/10 pt-6 text-sm text-[var(--color-footer-subtle)]">© 2026 Sesli Gider. Tüm hakları saklıdır.</div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
